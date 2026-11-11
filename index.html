@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNS64 Browser Extension</title>
+<meta name="description" content="Offizielle Seite der Browser-Erweiterung für DNS64 (Node64): Blocklisten pausieren, Domains freigeben oder sperren.">
+<meta name="google-site-verification" content="MtjxJd9oEaAr9JwC3r3JlEnO6__wt2S2N93WhKttiIY" />
+<meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://grepvortex.github.io/">
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fg: #1b1b1f; --muted: #55555f; --bg: #fdfdfc; --rule: #e3e3e0;
+    --accent: #6d5ae6; --card: #f6f5f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #ececf1; --muted: #a5a5b0; --bg: #16161a; --rule: #2c2c33;
+      --accent: #a99bff; --card: #1e1e24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center; padding: 2rem 1.25rem;
+  }
+  main { max-width: 34rem; }
+  .brand { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.6rem; }
+  .brand img { width: 44px; height: 44px; border-radius: 9px; }
+  .brand span { font-weight: 600; letter-spacing: -.01em; font-size: 1.05rem; }
+  .brand em { display: block; font-style: normal; font-weight: 400; font-size: .9rem; color: var(--muted); }
+  h1 { font-size: clamp(1.7rem, 5vw, 2.3rem); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 .9rem; }
+  p { color: var(--muted); margin: 0 0 1.6rem; }
+  .cta { display: flex; gap: .7rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: .68rem 1.15rem; border-radius: 8px;
+    font-size: .95rem; font-weight: 600; text-decoration: none; border: 1px solid transparent;
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.ghost { border-color: var(--rule); color: var(--fg); }
+  .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 2.6rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+           font-size: .82rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <img src="favicon.png" alt="">
+    <span>DNS64<em>Browser Extension</em></span>
+  </div>
+
+  <h1>Blocklisten von DNS64 im Browser schalten.</h1>
+  <p>
+    Die Erweiterung ist der Schalter für das DNS64-Modul einer selbst betriebenen
+    Node64-Instanz: Blockieren pausieren, eine Domain freigeben oder sperren – mit Status
+    und Kennzahlen, ohne die Weboberfläche der Node zu öffnen.
+  </p>
+
+  <div class="cta">
+    <a class="btn primary" href="dns64-browser-extension/">Zur Projektseite</a>
+    <a class="btn ghost" href="https://chromewebstore.google.com/detail/dns64-browser-extension/fnolfhpfonkjefmlbpcanncdnliadhpe">Im Chrome Web Store</a>
+    <a class="btn ghost" href="https://github.com/GrepVortex/dns64-browser-extension">Quellcode</a>
+  </div>
+
+  <footer>
+    Eigenständiges Projekt, kein offizieller Teil von Node64. Node64 und ipv64.net werden von der
+    Prox IT UG betrieben. Diese Seite setzt keine Cookies und lädt nichts von Dritten.
+  </footer>
+</main>
+</body>
+</html>
